@@ -1,3 +1,5 @@
+
+<div class="bodyDiv">
 <div class="mainDiv">
   <h1> Weather Report</h1>
 </div>
@@ -10,5 +12,11 @@
       <input type="text" id="city" required class="form-control" placeholder="ex: Delhi" [(ngModel)]="data.city" name="city"/>
       <input type="submit" class="btn btn-succes" (click)="getWeather()" value="Get Weather" />
     </div>
+    <div>
+    <app-weather-data [WeatherData]="jsonData"></app-weather-data>
+    <!--<app-user-grid [employees] ="emps" (EmpIdOutput)="viewEmployee($event)" (DelEmpIdOutput)="deleteUser($event)"> </app-user-grid>-->
+    </div>
   </fieldSet>
 </div>
+</div>
+

@@ -4,3 +4,8 @@
     width:100%;
     height:100%;
 }
+
+.bodyDiv{
+    background: radial-gradient(circle at top, #524d96 , black);
+    color:White;
+}
