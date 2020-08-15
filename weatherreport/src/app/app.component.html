@@ -1,0 +1,14 @@
+<div class="mainDiv">
+  <h1> Weather Report</h1>
+</div>
+
+<div>
+  <fieldSet>
+    <legend> Weather </legend>
+    <div>
+      <label> Enter Name of the city </label>
+      <input type="text" id="city" required class="form-control" placeholder="ex: Delhi" [(ngModel)]="data.city" name="city"/>
+      <input type="submit" class="btn btn-succes" (click)="getWeather()" value="Get Weather" />
+    </div>
+  </fieldSet>
+</div>
