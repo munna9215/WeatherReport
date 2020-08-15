@@ -1,7 +1,7 @@
 
 steps to  create account and get API key
 
-1) Create an account in openweathermpp
+1) Create an account in openweathermap
 
 2) URL :  https://openweathermap.org/
 
