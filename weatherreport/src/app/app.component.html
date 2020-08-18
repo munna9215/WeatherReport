@@ -1,25 +1,44 @@
-
 <div class="bodyDiv">
-<div class="mainDiv">
-  <h1> Weather Report</h1>
-</div>
-
-<div>
-  <fieldSet>
-    <legend> Weather </legend>
-    <div>
-      <label> Enter Name of the city </label>
-      <input type="text" id="city" required class="form-control" placeholder="ex: Delhi" [(ngModel)]="data.city" name="city"/>
-      <input type="submit" class="btn btn-succes" (click)="getWeather()" value="Get Weather" />
-    </div>
-    <div>
-    <app-weather-data [WeatherData]="jsonData"></app-weather-data>
-    <!--<app-user-grid [employees] ="emps" (EmpIdOutput)="viewEmployee($event)" (DelEmpIdOutput)="deleteUser($event)"> </app-user-grid>-->
-    </div>
-  </fieldSet>
-</div>
-<div style="text-align:center;color:#ccc">
-     <label > &#169; Copy Rights reserved for  SMK  @ 2020-21 </label>
+  <div class="mainDiv">
+    <h1> Weather Report</h1>
   </div>
-</div>
 
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Enter city</h3>
+        <input type="text" id="city" required class="form-control" placeholder="ex: Delhi" [(ngModel)]="data.city" name="city" />
+      </div>
+      <div class="col-sm-4">
+        <h3>Enter Latitude </h3>
+        <input type="text" id="latitude" required class="form-control" placeholder="" [(ngModel)]="data.latitude" name="latitude"
+        />
+      </div>
+      <div class="col-sm-4">
+        <h3>Enter longitude</h3>
+        <input type="text" id="longitude" required class="form-control" placeholder="" [(ngModel)]="data.longitude" name="longitude"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-12">
+        <input type="submit" class="btn btn-success" (click)="getWeather()" value="Get Weather" />
+      </div>
+    </div>
+    <div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <app-weather-data [WeatherData]="jsonData"></app-weather-data>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;color:#ccc">
+        <label> &#169; Copy Rights reserved for  SMK  @ 2020-21 </label>
+      </div>
+    </div>
